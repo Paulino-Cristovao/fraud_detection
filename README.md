@@ -1,12 +1,19 @@
-# Project Title
+# AI Credit Card Fraud Detection with PyTorch CNN
 
 ## Overview
-This project is designed to implement a PyTorch-based Convolutional Neural Network (CNN) for training on a specified dataset. It includes scripts for data handling, model training, and evaluation, as well as testing and containerization support.
-
+This project is designed to implement a PyTorch-based Convolutional Neural Network (CNN) for detecting credit card fraud. It includes scripts for data handling, model training, evaluation, testing, and containerization support.
 
 # AI Credit Card Fraud Detection with PyTorch CNN
 
 This repository implements a credit card fraud detection model using a PyTorch-based 1D Convolutional Neural Network (CNN). The project includes:
+- Data Download: Uses the Kaggle API to download the Credit Card Fraud dataset.
+- Data Preprocessing: Normalizes and prepares tabular data for training.
+- Model Training: Trains a CNN model and displays training loss and accuracy curves.
+- Evaluation: Calculates ROC AUC and prints a classification report.
+- Testing: Includes tests with pytest.
+- CI/CD: GitHub Actions workflow for linting (flake8, mypy, pylint) and testing.
+- Containerization: Dockerfile provided to run the project in a container.
+- Dependency Management: Uses `pyproject.toml` with Poetry.
 
 - **Data Download**: Uses the Kaggle API to download the Credit Card Fraud dataset.
 - **Data Preprocessing**: Normalizes and prepares tabular data for training.
