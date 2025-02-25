@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "ai-fraud-detection"
+version = "0.1.0"
+description = "Credit Card Fraud Detection using PyTorch CNN"
+authors = ["Paulino Cristóvão <paulinocristovao86@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.21"
+pandas = "^1.3"
+xgboost = "^1.5"  # if still needed
+shap = "^0.39"
+matplotlib = "^3.4"
+scikit-learn = "^0.24"
+torch = "^1.10"
+torchvision = "^0.11"
+kaggle = "^1.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
+flake8 = "^4.0"
+mypy = "^0.910"
+pylint = "^2.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+python_version = "3.8"
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 120
+exclude = [".git", "__pycache__", "build", "dist"]
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = ["C0114", "C0115", "C0116"]
